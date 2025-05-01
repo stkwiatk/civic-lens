@@ -43,11 +43,11 @@ ol[role='list'] {
 }
 
 :root {
-  --blue-bulletin: #1D3557;
+  --blue-bulletin: #84b7ff;
   --news-flash: #E63946;
   --watchdog-white: #F1FAEE;
   --truth-text: #333;
-  --story-subtitle: #457B9D;
+  --story-subtitle: #65b7ea;
   --font-body: "Source Sans 3", sans-serif;
   --font-heading: 'Merriweather', serif;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
