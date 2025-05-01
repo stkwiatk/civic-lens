@@ -7,28 +7,31 @@
   <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta name="author" content="Civic Lens">
   
-   <meta property="og:title" content="Civic Lens">
-  <meta property="og:description" content="Independent journalism. Unbiased reporting. Truth-driven storytelling.">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Civic Lens">
+  <meta property="og:description" content="Unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://example.com/images/og-image.jpg">
-  <meta property="og:url" content="https://civiclens.org">
-
-  <link rel="stylesheet" href="styles.css">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <meta property="og:url" content="https://civiclens.com">
 
   <title>Civic Lens</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Skip link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <button id="theme-toggle" aria-label="Toggle light/dark mode">
-    <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
-      <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
-    </svg>
-  </button>
-
   <header>
+    <button id="theme-toggle" aria-label="Toggle light/dark mode">
+      <svg width="35px" height="35px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
+        <g clip-path="url(#a)">
+          <path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/>
+        </g>
+      </svg>
+    </button>
+
     <h1>Civic Lens</h1>
     <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
 
@@ -48,7 +51,7 @@
     <section>
       <h2>Welcome to Civic Lens</h2>
       <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-      <blockquote class="tagline">"We don't follow the narrative. We follow the facts."</blockquote>
+      <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
     </section>
 
     <section id="breaking-news">
@@ -85,46 +88,22 @@
       <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
       <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-        <div>
-          <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}">
-        </div>
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" required>
 
         <fieldset>
           <legend>Notification Preferences</legend>
-          <div>
-            <input type="checkbox" id="breaking" name="prefs[]" value="breaking">
-            <label for="breaking">Breaking News</label>
-          </div>
-          <div>
-            <input type="checkbox" id="politics" name="prefs[]" value="politics">
-            <label for="politics">Politics</label>
-          </div>
-          <div>
-            <input type="checkbox" id="weather" name="prefs[]" value="weather">
-            <label for="weather">Weather</label>
-          </div>
-          <div>
-            <input type="checkbox" id="sports" name="prefs[]" value="sports">
-            <label for="sports">Sports</label>
-          </div>
-          <div>
-            <input type="checkbox" id="entertainment" name="prefs[]" value="entertainment">
-            <label for="entertainment">Entertainment</label>
-          </div>
-          <div>
-            <input type="checkbox" id="world" name="prefs[]" value="world">
-            <label for="world">World</label>
-          </div>
-          <div>
-            <input type="checkbox" id="financial" name="prefs[]" value="financial">
-            <label for="financial">Financial</label>
-          </div>
+
+          <label><input type="checkbox" name="preferences" value="breaking-news"> Breaking News</label><br>
+          <label><input type="checkbox" name="preferences" value="politics"> Politics</label><br>
+          <label><input type="checkbox" name="preferences" value="weather"> Weather</label><br>
+          <label><input type="checkbox" name="preferences" value="sports"> Sports</label><br>
+          <label><input type="checkbox" name="preferences" value="entertainment"> Entertainment</label><br>
+          <label><input type="checkbox" name="preferences" value="world"> World</label><br>
+          <label><input type="checkbox" name="preferences" value="financial"> Financial</label>
         </fieldset>
 
         <button type="submit">Subscribe</button>
@@ -149,10 +128,8 @@
 
   <script>
     const toggleButton = document.getElementById('theme-toggle');
-
     toggleButton.addEventListener('click', () => {
       const body = document.body;
-
       if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
         body.classList.add('light-mode');
