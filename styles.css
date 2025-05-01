@@ -56,11 +56,9 @@ ol[role='list'] {
 
 body.light-mode {
   background-color: var(--watchdog-white);
-  color: var(--truth-text);
 }
 body.dark-mode {
   background-color: var(--truth-text);
-  color: var(--watchdog-white);
 }
 #theme-toggle {
   position: absolute;
